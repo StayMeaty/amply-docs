@@ -1,0 +1,24 @@
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Official announcements from the Amply team
+
+feature:
+  label: Feature
+  permalink: /feature
+  description: New features and updates
+
+guide:
+  label: Guide
+  permalink: /guide
+  description: How-to guides and tutorials
+
+impact:
+  label: Impact
+  permalink: /impact
+  description: Impact stories and success stories
+
+community:
+  label: Community
+  permalink: /community
+  description: Community news and updates

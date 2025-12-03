@@ -1,0 +1,27 @@
+/**
+ * Custom CSS for Amply Docs
+ * Using pastel green as primary color
+ */
+
+:root {
+  --ifm-color-primary: #77DD77;
+  --ifm-color-primary-dark: #5cd65c;
+  --ifm-color-primary-darker: #4ed14e;
+  --ifm-color-primary-darkest: #36c336;
+  --ifm-color-primary-light: #92e492;
+  --ifm-color-primary-lighter: #a0e8a0;
+  --ifm-color-primary-lightest: #bef0be;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #98E898;
+  --ifm-color-primary-dark: #7be07b;
+  --ifm-color-primary-darker: #6ddc6d;
+  --ifm-color-primary-darkest: #42d142;
+  --ifm-color-primary-light: #b5f0b5;
+  --ifm-color-primary-lighter: #c3f4c3;
+  --ifm-color-primary-lightest: #e0fae0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
