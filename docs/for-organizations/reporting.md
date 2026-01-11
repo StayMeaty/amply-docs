@@ -72,12 +72,17 @@ Useful for:
 
 ### Tax Documentation
 
-Support donor tax deductions:
+Generate compliant tax receipts for your donors:
 
-- Individual donation receipts (automatic)
+- **Tax-deductible receipt generation**
+  - Jurisdiction-compliant templates (Australia DGR first)
+  - Organization branding and customization
+  - Automatic or batch generation
+  - Ledger-linked for verification
+  - Additional jurisdictions as Amply expands
+- Individual donation confirmations (automatic)
 - Annual giving summaries
 - Batch exports for your records
-- Compliance with local requirements
 
 ## Impact Reports
 

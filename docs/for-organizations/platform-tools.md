@@ -56,10 +56,15 @@ Comprehensive view of each supporter:
 
 Stay connected with supporters:
 
-- **Automated receipts**: Instant confirmation of donations
+- **Tax-deductible receipts**: Generate compliant tax receipts for donors
+  - Australia DGR-compliant template available
+  - Your branding: logo, letterhead, acknowledgment message
+  - Automated: real-time after donation, or batch/annual
+  - Verifiable: links to public ledger entry
+  - *Additional jurisdictions coming: UK, Canada, Germany*
 - **Thank-you messages**: Customizable acknowledgments
 - **Updates**: Share progress on projects they've supported
-- **Tax documentation**: End-of-year giving summaries
+- **Annual summaries**: End-of-year giving statements for donors
 
 ### Segmentation
 

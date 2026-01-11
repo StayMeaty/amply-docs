@@ -29,6 +29,17 @@ For example:
 
 Before donating, check the organization's tax status on their Amply profile.
 
+### How Organizations Generate Receipts
+
+Many organizations on Amply use our receipt generation tool to create compliant tax receipts. When you donate:
+
+1. Your donation is recorded on Amply's ledger
+2. The organization generates a receipt using their verified details (name, tax ID, DGR status)
+3. The receipt is delivered to you (email or download)
+4. You can verify the donation on the public ledger
+
+The receipt comes from the organization—Amply provides the infrastructure that makes it easy for them to issue compliant receipts.
+
 ## How Tax Deductions Work
 
 ### General Principle

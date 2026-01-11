@@ -374,3 +374,12 @@ docs/
   - Payment processing via Stripe Connect
   - Tax deductibility explanation
   - Placeholder for corporate registration details
+
+**Update**: Tax receipt generation tool documented as roadmap feature
+- Feature: Amply provides infrastructure for orgs to generate tax-deductible receipts
+- Key principle: Org issues receipt (their name, ABN, DGR status); Amply is the tool
+- Scope: Australia-first (DGR-compliant template), then expand to UK, Canada, Germany
+- Documentation updated:
+  - `for-organizations/platform-tools.md`: Expanded Communication Tools with receipt generation
+  - `for-organizations/reporting.md`: Expanded Tax Documentation section
+  - `for-donors/tax-benefits.md`: Added "How Organizations Generate Receipts" subsection
