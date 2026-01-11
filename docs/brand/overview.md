@@ -30,15 +30,15 @@ Amply's visual identity reflects its mission: **clarity through transparency**. 
 
 ### Colors
 
-**Amply Teal** is our primary brand color.
-
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Amply Teal | `#05668D` | Primary brand color, wordmark |
-| Amply Dark | `#044a66` | Hover states, dark accents |
-| Amply Light | `#e8f4f8` | Backgrounds, subtle accents |
+| **Amply Teal** | `#05668D` | Primary, wordmark, text |
+| **Amply Coral** | `#F98152` | Secondary, CTAs, accents |
+| Amply Dark | `#044a66` | Hover states, depth |
+| Amply Light | `#e8f4f8` | Backgrounds, fills |
 
-Amply Teal conveys trust, clarity, and calm—values central to transparent giving. It achieves **WCAG AA** contrast (6.4:1) on white backgrounds.
+- **Teal** conveys trust and clarity (WCAG AA: 6.4:1 on white)
+- **Coral** adds warmth and energy—use for buttons, highlights, icons (not body text)
 
 ### Voice & Tone
 

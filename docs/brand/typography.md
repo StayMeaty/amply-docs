@@ -83,6 +83,12 @@ The contrast between ultra-light headlines and the heavy "Amply" wordmark create
 :root {
   --font-family: 'Lexend', sans-serif;
 
+  /* Brand colors */
+  --amply-teal: #05668D;
+  --amply-coral: #F98152;
+  --amply-dark: #044a66;
+  --amply-light: #e8f4f8;
+
   /* Weight tokens */
   --font-weight-thin: 100;
   --font-weight-extralight: 200;

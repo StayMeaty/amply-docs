@@ -44,7 +44,7 @@ First paragraph of content...
 - **Fee details**: Donors choose to cover fees (default/recommended) or have fees deducted. Bank transfers (SEPA/ACH) often fee-free. No payout fees—what's shown is what orgs receive. Canonical source: `transparency/pricing.md`
 - **Privacy principle**: "Hide faces, not money." All transactions on ledger (including sensitive ones), but visibility levels control public detail. Sensitive data (HR, legal, security) can be aggregated or internal-only while still in hash chain. Canonical source: `transparency/privacy.md`
 - **Typography**: Lexend (Google Font). Headlines: Thin/ExtraLight; Body: Regular; Wordmark "Amply": Black 900. Canonical source: `brand/typography.md`
-- **Brand color**: Amply Teal `#05668D`. Dark variant: `#044a66`. Light variant: `#e8f4f8`. Canonical source: `brand/overview.md`
+- **Brand colors**: Primary: Amply Teal `#05668D`. Secondary: Amply Coral `#F98152`. Dark: `#044a66`. Light: `#e8f4f8`. Canonical source: `brand/overview.md`
 
 ## Tone & Voice
 - **Slightly inspiring but professional**: Not preachy, not saintly
@@ -415,3 +415,10 @@ docs/
   - Background usage examples
   - Incorrect usage examples (don'ts)
   - Implementation code (CSS, HTML)
+
+**Update**: Secondary brand color added
+- Amply Coral `#F98152` as secondary/accent color
+- Complementary to teal (opposite on color wheel)
+- Usage: CTAs, buttons, highlights, icons, accents
+- Note: Low contrast on white (2.5:1) — not for body text
+- Updated: `static/brand/logo-guidelines.html`, `brand/overview.md`, `brand/typography.md`
