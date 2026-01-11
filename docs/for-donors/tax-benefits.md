@@ -5,11 +5,29 @@ sidebar_position: 5
 # Tax Benefits
 *Understanding Tax Deductions for Charitable Giving*
 
-Donations to qualified charitable organizations may provide tax benefits. This document explains what documentation Amply provides and general considerations.
+Donations to qualified charitable organizations may provide tax benefits. This document explains how tax deductibility works when donating through Amply.
 
 :::caution Consult a Professional
 This is general information, not tax advice. Tax treatment varies by jurisdiction and individual circumstances. Consult a qualified tax professional for your specific situation.
 :::
+
+## Who Provides Your Tax Receipt
+
+**The organization you donate to—not Amply.**
+
+Amply is the technology platform that enables transparent giving. When you donate through Amply, your money goes directly to the organization via Stripe. The organization is the charity; Amply is the infrastructure.
+
+This means:
+- **Tax deductibility** depends on the organization's status in your country
+- **Tax receipts** are issued by the organization, not Amply
+- **Amply provides** transaction records and summaries for your reference, but these are not official tax receipts
+
+For example:
+- US donor → US 501(c)(3) org → Tax-deductible (org provides receipt)
+- German donor → German gGmbH org → Tax-deductible (org provides Zuwendungsbestätigung)
+- Any donor → Org without tax-exempt status in donor's country → Not deductible
+
+Before donating, check the organization's tax status on their Amply profile.
 
 ## How Tax Deductions Work
 
@@ -31,26 +49,23 @@ For a donation to be deductible:
 - Proper documentation required
 - Filed within applicable deadlines
 
-## Documentation Amply Provides
+## What Amply Provides (Transaction Records)
+
+Amply provides transaction records to help you track your giving. These support your records but are not a substitute for official tax receipts from organizations.
 
 ### For Each Donation
 
-**Immediate Receipt**
+**Transaction Confirmation**
 - Donation amount
 - Organization name
 - Date of donation
 - Transaction reference
-- Organization's tax ID/registration number
-
-**What's Included:**
-- Amount donated (before any fees you covered)
-- Receiving organization's legal name
-- Confirmation that no goods/services were received
-- Amply transaction ID for verification
+- Organization's tax ID/registration number (where available)
+- Amply transaction ID for ledger verification
 
 ### Annual Summaries
 
-For your yearly tax filing:
+For your personal records and to support tax filing:
 
 **Consolidated Report**
 - Total donations for the year
@@ -61,15 +76,15 @@ For your yearly tax filing:
 **Downloadable Formats:**
 - PDF for records
 - CSV for import
-- Printable tax forms (jurisdiction-specific)
 
-### Organization-Specific Documentation
+### Official Tax Receipts
 
-Some donors need acknowledgments directly from organizations:
+For official tax documentation, contact the organizations directly:
 
-- Request through Amply or directly from organization
-- Most organizations provide annual letters
-- Required for donations over certain thresholds
+- Most organizations provide annual acknowledgment letters
+- Required for donations over certain thresholds (e.g., $250+ in US)
+- Request through Amply or directly from the organization
+- Organizations are responsible for issuing compliant tax receipts
 
 ## Jurisdiction-Specific Information
 

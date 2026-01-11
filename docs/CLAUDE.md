@@ -101,7 +101,8 @@ docs/
 ├── about-amply/                    # Amply-the-organization
 │   ├── overview.md                 # Who is Amply
 │   ├── our-finances.md             # Amply's own financial transparency
-│   └── ethics.md                   # Ethical stance, technology choices
+│   ├── ethics.md                   # Ethical stance, technology choices
+│   └── legal.md                    # Corporate structure, platform vs. charity role
 │
 ├── for-organizations/              # Nonprofits RECEIVING donations
 │   ├── overview.md                 # What Amply offers
@@ -206,6 +207,7 @@ docs/
 | About Amply | `about-amply/overview.md` | Who is Amply, the organization behind the platform | Draft |
 | Our Finances | `about-amply/our-finances.md` | Amply's own financial transparency | Draft |
 | Our Ethics | `about-amply/ethics.md` | Ethical stance, technology choices, difficult questions | Draft |
+| Legal Information | `about-amply/legal.md` | Corporate structure, platform vs. charity role | Draft |
 | For Organizations | `for-organizations/overview.md` | What Amply offers nonprofits | Draft |
 | Getting Started (Orgs) | `for-organizations/getting-started.md` | Onboarding, verification process | Draft |
 | Requirements | `for-organizations/requirements.md` | Eligibility, verification tiers | Draft |
@@ -352,3 +354,23 @@ docs/
 - High: SDG goal pages, competitive context, German content decision
 - Medium: Organization timelines, fundraiser limits, impact methodology
 - Low: Regulator/auditor docs, Moral Circles depth
+
+**Update**: Platform vs. charity distinction clarified in docs
+- Key insight: Amply is infrastructure; orgs are the charities
+- Tax deductibility depends on recipient org, not Amply
+- Tax receipts issued by organizations, not Amply
+- Amply's jurisdiction (Australia) is less critical for core use case
+
+**Documentation updates**:
+- `for-donors/tax-benefits.md`: Added "Who Provides Your Tax Receipt" section
+  - Clarified orgs issue receipts, not Amply
+  - Renamed "Documentation Amply Provides" to "What Amply Provides (Transaction Records)"
+- `for-organizations/requirements.md`: Added "Your Tax Status" section
+  - Orgs need their own tax-exempt status
+  - Amply doesn't provide tax-exempt status
+  - Table of required status by jurisdiction
+- `about-amply/legal.md`: Created new page
+  - Amply's role as platform vs. charity
+  - Payment processing via Stripe Connect
+  - Tax deductibility explanation
+  - Placeholder for corporate registration details

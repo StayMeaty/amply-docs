@@ -7,6 +7,32 @@ sidebar_position: 3
 
 Amply verifies all organizations to protect donors and maintain platform integrity. This document outlines what's required.
 
+## Your Tax Status
+
+**Amply does not provide tax-exempt status.** Your organization must have its own charitable registration to offer tax-deductible donations to donors.
+
+Amply is a technology platform that enables transparent giving. When donors give through Amply, their money goes directly to your organization. You—not Amply—are the charity. This means:
+
+- **You issue tax receipts** to donors (not Amply)
+- **Your tax status** determines deductibility for donors
+- **You maintain** compliance with your local regulators
+
+### Tax Status by Jurisdiction
+
+| Country | Required Status |
+|---------|----------------|
+| United States | 501(c)(3) or equivalent |
+| Germany | Gemeinnützigkeit (gGmbH, e.V.) |
+| United Kingdom | Registered charity with Charity Commission |
+| Australia | DGR status with ACNC |
+| Other | Local charitable registration |
+
+Amply displays your tax status on your profile so donors know whether their donation is deductible in their jurisdiction.
+
+:::tip No Tax Status Yet?
+Organizations without tax-exempt status can still use Amply. Donations will flow normally—they just won't be tax-deductible for donors. Many fiscal sponsors can provide tax-exempt status for projects.
+:::
+
 ## Eligibility
 
 ### Who Can Join
