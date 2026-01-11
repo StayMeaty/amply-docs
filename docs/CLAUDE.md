@@ -43,6 +43,7 @@ First paragraph of content...
 - **Fee model (CRITICAL)**: Amply takes ZERO platform fees. Amply sustains itself through donations, like any other nonprofit. Only unavoidable third-party fees (e.g., Stripe payment processing) are passed through. This is a central differentiator.
 - **Fee details**: Donors choose to cover fees (default/recommended) or have fees deducted. Bank transfers (SEPA/ACH) often fee-free. No payout fees—what's shown is what orgs receive. Canonical source: `transparency/pricing.md`
 - **Privacy principle**: "Hide faces, not money." All transactions on ledger (including sensitive ones), but visibility levels control public detail. Sensitive data (HR, legal, security) can be aggregated or internal-only while still in hash chain. Canonical source: `transparency/privacy.md`
+- **Typography**: Lexend (Google Font). Headlines: Thin/ExtraLight; Body: Regular; Wordmark "Amply": Black 900. Canonical source: `brand/typography.md`
 
 ## Tone & Voice
 - **Slightly inspiring but professional**: Not preachy, not saintly
@@ -103,6 +104,10 @@ docs/
 │   ├── our-finances.md             # Amply's own financial transparency
 │   ├── ethics.md                   # Ethical stance, technology choices
 │   └── legal.md                    # Corporate structure, platform vs. charity role
+│
+├── brand/                          # Visual identity & design system
+│   ├── overview.md                 # Brand principles, element overview
+│   └── typography.md               # Lexend typeface, weights, usage
 │
 ├── for-organizations/              # Nonprofits RECEIVING donations
 │   ├── overview.md                 # What Amply offers
@@ -208,6 +213,8 @@ docs/
 | Our Finances | `about-amply/our-finances.md` | Amply's own financial transparency | Draft |
 | Our Ethics | `about-amply/ethics.md` | Ethical stance, technology choices, difficult questions | Draft |
 | Legal Information | `about-amply/legal.md` | Corporate structure, platform vs. charity role | Draft |
+| Brand Overview | `brand/overview.md` | Brand principles, visual identity elements | Draft |
+| Typography | `brand/typography.md` | Lexend typeface, weights, wordmark | Draft |
 | For Organizations | `for-organizations/overview.md` | What Amply offers nonprofits | Draft |
 | Getting Started (Orgs) | `for-organizations/getting-started.md` | Onboarding, verification process | Draft |
 | Requirements | `for-organizations/requirements.md` | Eligibility, verification tiers | Draft |
@@ -383,3 +390,14 @@ docs/
   - `for-organizations/platform-tools.md`: Expanded Communication Tools with receipt generation
   - `for-organizations/reporting.md`: Expanded Tax Documentation section
   - `for-donors/tax-benefits.md`: Added "How Organizations Generate Receipts" subsection
+
+**Update**: Brand guidelines established
+- Created `brand/` section for visual identity
+- **Typography**: Lexend as primary typeface (Google Font, accessibility-focused)
+  - Headlines: Thin 100 or ExtraLight 200 for clean, modern aesthetic
+  - Body: Regular 400 for readable content
+  - Wordmark: "Amply" in Black 900 (text logo, like Stripe)
+- Rationale: Lexend designed to reduce visual stress, improve reading—aligns with transparency/accessibility values
+- Documentation created:
+  - `brand/overview.md`: Brand principles, element overview
+  - `brand/typography.md`: Full typography guide with implementation examples
