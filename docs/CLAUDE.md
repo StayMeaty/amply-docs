@@ -146,6 +146,9 @@ docs/
 ├── api/                            # Developer reference
 │   └── overview.md                 # API intro (expandable)
 │
+├── help/                           # Troubleshooting & support
+│   └── common-issues.md            # FAQ-style common problems (grows organically)
+│
 └── tech-stack/                     # Internal developer documentation
     ├── overview.md                 # Master tech stack reference + architecture diagram
     ├── sentry.md                   # Error tracking configuration
@@ -232,6 +235,7 @@ docs/
 | Payment Flows | `architecture/stripe-flows.md` | Stripe Connect routing | Draft |
 | Data Model | `architecture/data-model.md` | Multi-tenant structure | Draft |
 | API Documentation | `api/overview.md` | API reference and SDKs | Draft |
+| Common Issues | `help/common-issues.md` | Troubleshooting FAQ (grows organically) | Draft |
 | Tech Stack Overview | `tech-stack/overview.md` | Master tech reference + architecture diagram | Draft |
 | Sentry | `tech-stack/sentry.md` | Error tracking configuration | Draft |
 | Backend Overview | `tech-stack/amply-backend/overview.md` | Python FastAPI backend architecture | Draft |
