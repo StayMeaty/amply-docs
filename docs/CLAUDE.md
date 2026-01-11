@@ -142,8 +142,47 @@ docs/
 │   ├── stripe-flows.md             # Payment routing
 │   └── data-model.md               # Multi-tenant, funds, projects
 │
-└── api/                            # Developer reference
-    └── overview.md                 # API intro (expandable)
+├── api/                            # Developer reference
+│   └── overview.md                 # API intro (expandable)
+│
+└── tech-stack/                     # Internal developer documentation
+    ├── overview.md                 # Master tech stack reference + architecture diagram
+    ├── sentry.md                   # Error tracking configuration
+    ├── amply-backend/              # Python FastAPI backend
+    │   ├── overview.md             # Backend architecture
+    │   ├── api.md                  # API structure
+    │   ├── services.md             # Service layer
+    │   ├── jobs.md                 # Background jobs
+    │   └── testing.md              # Testing approach
+    ├── amply-dashboard/            # React dashboard
+    │   └── overview.md             # Dashboard architecture
+    ├── amply-public-website/       # React public site
+    │   └── overview.md             # Public site architecture
+    ├── amply-verify/               # Open-source verification CLI
+    │   └── overview.md             # CLI architecture
+    ├── aws/                        # AWS infrastructure
+    │   ├── overview.md             # AWS setup overview
+    │   ├── ecs.md                  # ECS Fargate (backend compute)
+    │   ├── rds.md                  # PostgreSQL database
+    │   ├── elasticache.md          # Redis caching
+    │   ├── s3.md                   # Object storage
+    │   ├── sqs.md                  # Message queue
+    │   ├── ses.md                  # Transactional email
+    │   ├── cloudfront.md           # CDN
+    │   ├── route53.md              # DNS
+    │   └── secrets-manager.md      # Credentials management
+    ├── ci-cd/                      # GitHub Actions pipelines
+    │   └── overview.md             # CI/CD configuration
+    ├── netlify/                    # Static hosting
+    │   ├── netlify.md              # Netlify configuration
+    │   └── docusaurus/             # Docs site setup
+    │       └── overview.md
+    ├── sdks/                       # Client libraries
+    │   └── overview.md             # SDK architecture
+    ├── stripe/                     # Payment integration
+    │   └── overview.md             # Stripe Connect setup
+    └── widgets/                    # Embeddable widgets
+        └── overview.md             # Widget architecture
 ```
 
 ## Documentation Map
@@ -192,6 +231,32 @@ docs/
 | Payment Flows | `architecture/stripe-flows.md` | Stripe Connect routing | Draft |
 | Data Model | `architecture/data-model.md` | Multi-tenant structure | Draft |
 | API Documentation | `api/overview.md` | API reference and SDKs | Draft |
+| Tech Stack Overview | `tech-stack/overview.md` | Master tech reference + architecture diagram | Draft |
+| Sentry | `tech-stack/sentry.md` | Error tracking configuration | Draft |
+| Backend Overview | `tech-stack/amply-backend/overview.md` | Python FastAPI backend architecture | Draft |
+| Backend API | `tech-stack/amply-backend/api.md` | API structure and endpoints | Draft |
+| Backend Services | `tech-stack/amply-backend/services.md` | Service layer architecture | Draft |
+| Backend Jobs | `tech-stack/amply-backend/jobs.md` | Background job processing | Draft |
+| Backend Testing | `tech-stack/amply-backend/testing.md` | Testing approach | Draft |
+| Dashboard | `tech-stack/amply-dashboard/overview.md` | React dashboard architecture | Draft |
+| Public Website | `tech-stack/amply-public-website/overview.md` | React public site architecture | Draft |
+| Verify CLI | `tech-stack/amply-verify/overview.md` | Open-source verification CLI | Draft |
+| AWS Overview | `tech-stack/aws/overview.md` | AWS infrastructure setup | Draft |
+| AWS ECS | `tech-stack/aws/ecs.md` | ECS Fargate backend compute | Draft |
+| AWS RDS | `tech-stack/aws/rds.md` | PostgreSQL database | Draft |
+| AWS ElastiCache | `tech-stack/aws/elasticache.md` | Redis caching | Draft |
+| AWS S3 | `tech-stack/aws/s3.md` | Object storage | Draft |
+| AWS SQS | `tech-stack/aws/sqs.md` | Message queue | Draft |
+| AWS SES | `tech-stack/aws/ses.md` | Transactional email | Draft |
+| AWS CloudFront | `tech-stack/aws/cloudfront.md` | CDN configuration | Draft |
+| AWS Route 53 | `tech-stack/aws/route53.md` | DNS management | Draft |
+| AWS Secrets Manager | `tech-stack/aws/secrets-manager.md` | Credentials management | Draft |
+| CI/CD | `tech-stack/ci-cd/overview.md` | GitHub Actions pipelines | Draft |
+| Netlify | `tech-stack/netlify/netlify.md` | Static hosting configuration | Draft |
+| Docusaurus | `tech-stack/netlify/docusaurus/overview.md` | Docs site setup | Draft |
+| SDKs | `tech-stack/sdks/overview.md` | Client library architecture | Draft |
+| Stripe Integration | `tech-stack/stripe/overview.md` | Stripe Connect setup | Draft |
+| Widgets | `tech-stack/widgets/overview.md` | Embeddable widget architecture | Draft |
 
 ## Cross-References (Planned)
 | Source | References | Reason |
@@ -241,3 +306,20 @@ docs/
 - Audience routing table
 - Core principles summary
 - Added "Tone & Voice" section to CLAUDE.md
+
+### 2025-01-11
+**Status**: Tech-stack documentation integrated
+- Added `tech-stack/` section to Structure (26 files covering internal developer docs)
+- Added all tech-stack documents to Documentation Map
+- Sections now documented:
+  - `amply-backend/` - Python FastAPI backend (5 files)
+  - `amply-dashboard/` - React dashboard
+  - `amply-public-website/` - React public site
+  - `amply-verify/` - Open-source verification CLI
+  - `aws/` - AWS infrastructure (10 files)
+  - `ci-cd/` - GitHub Actions pipelines
+  - `netlify/` - Static hosting + Docusaurus
+  - `sdks/` - Client libraries
+  - `stripe/` - Payment integration
+  - `widgets/` - Embeddable widgets
+- Note: tech-stack/ is internal developer documentation, not in public sidebar
