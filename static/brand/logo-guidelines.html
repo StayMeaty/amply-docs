@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amply Logo Guidelines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --amply-primary: #05668D;
+      --amply-primary-rgb: 5, 102, 141;
+      --amply-dark: #044a66;
+      --amply-light: #e8f4f8;
+      --white: #ffffff;
+      --black: #1a1a1a;
+      --gray-100: #f5f5f5;
+      --gray-200: #e5e5e5;
+      --gray-500: #737373;
+      --gray-800: #262626;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--white);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header */
+    header {
+      background: var(--amply-primary);
+      color: var(--white);
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-weight: 200;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-weight: 300;
+      opacity: 0.9;
+    }
+
+    .wordmark-hero {
+      font-weight: 900;
+      font-size: 5rem;
+      letter-spacing: -0.02em;
+      margin: 2rem 0;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-weight: 200;
+      font-size: 2rem;
+      color: var(--amply-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+
+    h3:first-child {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      max-width: 65ch;
+    }
+
+    /* Logo Display */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .logo-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .logo-display {
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+    }
+
+    .logo-display .wordmark {
+      font-weight: 900;
+      font-size: 3rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-card-label {
+      padding: 1rem 1.5rem;
+      background: var(--gray-100);
+      font-size: 0.875rem;
+    }
+
+    .logo-card-label strong {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .logo-card-label span {
+      color: var(--gray-500);
+      font-size: 0.8rem;
+    }
+
+    /* Background variations */
+    .bg-white { background: var(--white); }
+    .bg-light { background: var(--gray-100); }
+    .bg-primary { background: var(--amply-primary); }
+    .bg-dark { background: var(--gray-800); }
+    .bg-black { background: var(--black); }
+
+    .color-primary { color: var(--amply-primary); }
+    .color-white { color: var(--white); }
+    .color-dark { color: var(--gray-800); }
+
+    /* Clear Space */
+    .clearspace-demo {
+      display: inline-block;
+      position: relative;
+      margin: 2rem auto;
+      background: var(--gray-100);
+      padding: 3rem;
+    }
+
+    .clearspace-demo .wordmark {
+      font-weight: 900;
+      font-size: 3rem;
+      color: var(--amply-primary);
+      letter-spacing: -0.02em;
+      position: relative;
+    }
+
+    .clearspace-box {
+      position: absolute;
+      border: 2px dashed var(--amply-primary);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .clearspace-label {
+      position: absolute;
+      font-size: 0.7rem;
+      color: var(--amply-primary);
+      font-weight: 500;
+    }
+
+    .clearspace-wrapper {
+      text-align: center;
+    }
+
+    .clearspace-unit {
+      display: inline-block;
+      background: var(--amply-light);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .clearspace-unit code {
+      font-family: monospace;
+      background: var(--white);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* Minimum Size */
+    .size-demos {
+      display: flex;
+      align-items: flex-end;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .size-demo {
+      text-align: center;
+    }
+
+    .size-demo .wordmark {
+      font-weight: 900;
+      color: var(--amply-primary);
+      letter-spacing: -0.02em;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .size-demo span {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+    }
+
+    .size-minimum {
+      border: 2px solid var(--amply-primary);
+      padding: 1rem;
+      border-radius: 8px;
+      background: var(--amply-light);
+    }
+
+    /* Color Specs */
+    .color-specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .color-spec-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .color-swatch {
+      height: 120px;
+    }
+
+    .color-values {
+      padding: 1.5rem;
+    }
+
+    .color-values h4 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .color-value-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: 0.9rem;
+    }
+
+    .color-value-row:last-child {
+      border-bottom: none;
+    }
+
+    .color-value-row span:first-child {
+      color: var(--gray-500);
+    }
+
+    .color-value-row code {
+      font-family: monospace;
+      background: var(--gray-100);
+      padding: 0.125rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    /* Don'ts */
+    .donts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .dont-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .dont-display {
+      padding: 2rem;
+      background: var(--gray-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+      position: relative;
+    }
+
+    .dont-display::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 45%, rgba(220, 38, 38, 0.1) 45%, rgba(220, 38, 38, 0.1) 55%, transparent 55%);
+    }
+
+    .dont-display .wordmark {
+      font-weight: 900;
+      font-size: 2rem;
+      color: var(--amply-primary);
+      letter-spacing: -0.02em;
+    }
+
+    .dont-label {
+      padding: 1rem;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .dont-label::before {
+      content: "✕";
+      color: #dc2626;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Stretched */
+    .stretched-x { transform: scaleX(1.3); }
+    .stretched-y { transform: scaleY(1.3); }
+
+    /* Wrong font */
+    .wrong-font { font-family: Arial, sans-serif; }
+
+    /* Wrong weight */
+    .wrong-weight { font-weight: 400; }
+
+    /* Effects */
+    .with-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    .with-outline {
+      -webkit-text-stroke: 1px var(--amply-primary);
+      color: transparent;
+    }
+
+    /* Wrong color */
+    .wrong-color { color: #3b82f6; }
+
+    /* Rotated */
+    .rotated { transform: rotate(-15deg); }
+
+    /* Usage Examples */
+    .usage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .usage-card {
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .usage-display {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+    }
+
+    .usage-display .wordmark {
+      font-weight: 900;
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .usage-label {
+      padding: 1rem 1.5rem;
+      background: var(--gray-100);
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .usage-label.approved::before {
+      content: "✓";
+      color: #16a34a;
+      font-weight: 700;
+    }
+
+    /* Photo background simulation */
+    .bg-photo {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .bg-photo-light {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    /* Contrast info */
+    .contrast-badge {
+      display: inline-block;
+      background: #16a34a;
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--gray-100);
+      padding: 3rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--gray-500);
+    }
+
+    footer a {
+      color: var(--amply-primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Code blocks */
+    .code-block {
+      background: var(--gray-800);
+      color: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 0.875rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    .code-block .comment {
+      color: #6b7280;
+    }
+
+    .code-block .property {
+      color: #93c5fd;
+    }
+
+    .code-block .value {
+      color: #fcd34d;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.75rem; }
+      .wordmark-hero { font-size: 3.5rem; }
+      h2 { font-size: 1.5rem; }
+      section { padding: 3rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Logo Guidelines</h1>
+      <p>The Amply wordmark and how to use it</p>
+      <div class="wordmark-hero">Amply</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- The Wordmark -->
+    <section>
+      <div class="container">
+        <h2>The Wordmark</h2>
+        <p>
+          The Amply logo is a wordmark—the name "Amply" set in <strong>Lexend Black (900)</strong>.
+          This approach keeps our identity simple, recognizable, and accessible.
+        </p>
+        <p>
+          The wordmark should never be recreated or approximated. Always use the official
+          wordmark files or render it using Lexend Black at the correct specifications.
+        </p>
+
+        <h3>Primary Versions</h3>
+        <div class="logo-grid">
+          <div class="logo-card">
+            <div class="logo-display bg-white">
+              <span class="wordmark color-primary">Amply</span>
+            </div>
+            <div class="logo-card-label">
+              <strong>Primary</strong>
+              <span>Amply Teal on white/light backgrounds</span>
+            </div>
+          </div>
+
+          <div class="logo-card">
+            <div class="logo-display bg-primary">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="logo-card-label">
+              <strong>Reversed</strong>
+              <span>White on Amply Teal background</span>
+            </div>
+          </div>
+
+          <div class="logo-card">
+            <div class="logo-display bg-dark">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="logo-card-label">
+              <strong>Dark Mode</strong>
+              <span>White on dark backgrounds</span>
+            </div>
+          </div>
+
+          <div class="logo-card">
+            <div class="logo-display bg-light">
+              <span class="wordmark color-dark">Amply</span>
+            </div>
+            <div class="logo-card-label">
+              <strong>Monochrome</strong>
+              <span>Dark gray for single-color applications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clear Space -->
+    <section>
+      <div class="container">
+        <h2>Clear Space</h2>
+        <p>
+          The wordmark needs room to breathe. Maintain a minimum clear space around
+          the logo equal to the height of the letter "A" in the wordmark.
+        </p>
+        <p>
+          This ensures the logo remains legible and uncluttered in any context.
+        </p>
+
+        <div class="clearspace-wrapper">
+          <div class="clearspace-demo">
+            <span class="wordmark">Amply</span>
+          </div>
+          <div class="clearspace-unit">
+            Minimum clear space = <code>1× height of "A"</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minimum Size -->
+    <section>
+      <div class="container">
+        <h2>Minimum Size</h2>
+        <p>
+          To maintain legibility, the wordmark should never appear smaller than the
+          minimum sizes shown below.
+        </p>
+
+        <div class="size-demos">
+          <div class="size-demo">
+            <span class="wordmark" style="font-size: 4rem;">Amply</span>
+            <span>64px / 48pt</span>
+          </div>
+          <div class="size-demo">
+            <span class="wordmark" style="font-size: 2.5rem;">Amply</span>
+            <span>40px / 30pt</span>
+          </div>
+          <div class="size-demo size-minimum">
+            <span class="wordmark" style="font-size: 1.25rem;">Amply</span>
+            <span><strong>Minimum: 20px / 15pt</strong></span>
+          </div>
+        </div>
+
+        <p style="margin-top: 2rem;">
+          For digital applications, 20px is the absolute minimum. For print,
+          15pt (approximately 5mm in height) is the minimum.
+        </p>
+      </div>
+    </section>
+
+    <!-- Colors -->
+    <section>
+      <div class="container">
+        <h2>Brand Colors</h2>
+        <p>
+          Amply Teal is our primary brand color. It conveys trust, clarity, and calm—values
+          central to transparent giving.
+        </p>
+
+        <div class="color-specs">
+          <div class="color-spec-card">
+            <div class="color-swatch bg-primary"></div>
+            <div class="color-values">
+              <h4>Amply Teal (Primary)</h4>
+              <div class="color-value-row">
+                <span>Hex</span>
+                <code>#05668D</code>
+              </div>
+              <div class="color-value-row">
+                <span>RGB</span>
+                <code>5, 102, 141</code>
+              </div>
+              <div class="color-value-row">
+                <span>HSL</span>
+                <code>197°, 93%, 29%</code>
+              </div>
+              <div class="color-value-row">
+                <span>CMYK</span>
+                <code>96, 28, 0, 45</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="color-spec-card">
+            <div class="color-swatch" style="background: #044a66;"></div>
+            <div class="color-values">
+              <h4>Amply Dark</h4>
+              <div class="color-value-row">
+                <span>Hex</span>
+                <code>#044a66</code>
+              </div>
+              <div class="color-value-row">
+                <span>RGB</span>
+                <code>4, 74, 102</code>
+              </div>
+              <div class="color-value-row">
+                <span>Use</span>
+                <span>Hover states, dark accents</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="color-spec-card">
+            <div class="color-swatch" style="background: #e8f4f8; border-bottom: 1px solid #ddd;"></div>
+            <div class="color-values">
+              <h4>Amply Light</h4>
+              <div class="color-value-row">
+                <span>Hex</span>
+                <code>#e8f4f8</code>
+              </div>
+              <div class="color-value-row">
+                <span>RGB</span>
+                <code>232, 244, 248</code>
+              </div>
+              <div class="color-value-row">
+                <span>Use</span>
+                <span>Backgrounds, subtle accents</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Accessibility</h3>
+        <p>
+          Amply Teal (#05668D) on white has a contrast ratio of <strong>6.4:1</strong>,
+          exceeding WCAG AA requirements (4.5:1) for normal text and AAA for large text.
+          <span class="contrast-badge">WCAG AA</span>
+        </p>
+        <p>
+          White text on Amply Teal background also achieves 6.4:1 contrast.
+        </p>
+      </div>
+    </section>
+
+    <!-- Usage on Backgrounds -->
+    <section>
+      <div class="container">
+        <h2>Usage on Backgrounds</h2>
+        <p>
+          Choose the appropriate wordmark version based on background contrast.
+        </p>
+
+        <div class="usage-grid">
+          <div class="usage-card">
+            <div class="usage-display bg-white">
+              <span class="wordmark color-primary">Amply</span>
+            </div>
+            <div class="usage-label approved">Use Amply Teal on white/light</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-display bg-photo-light">
+              <span class="wordmark color-primary">Amply</span>
+            </div>
+            <div class="usage-label approved">Amply Teal on light imagery</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-display bg-primary">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="usage-label approved">White on Amply Teal</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-display bg-photo">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="usage-label approved">White on dark/colorful imagery</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-display bg-dark">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="usage-label approved">White on dark backgrounds</div>
+          </div>
+
+          <div class="usage-card">
+            <div class="usage-display bg-black">
+              <span class="wordmark color-white">Amply</span>
+            </div>
+            <div class="usage-label approved">White on black</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Don'ts -->
+    <section>
+      <div class="container">
+        <h2>Incorrect Usage</h2>
+        <p>
+          To maintain brand consistency, avoid the following treatments of the wordmark.
+        </p>
+
+        <div class="donts-grid">
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark stretched-x">Amply</span>
+            </div>
+            <div class="dont-label">Don't stretch horizontally</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark stretched-y">Amply</span>
+            </div>
+            <div class="dont-label">Don't stretch vertically</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark wrong-font">Amply</span>
+            </div>
+            <div class="dont-label">Don't use other fonts</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark wrong-weight">Amply</span>
+            </div>
+            <div class="dont-label">Don't use other weights</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark with-shadow">Amply</span>
+            </div>
+            <div class="dont-label">Don't add drop shadows</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark with-outline">Amply</span>
+            </div>
+            <div class="dont-label">Don't outline the text</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark wrong-color">Amply</span>
+            </div>
+            <div class="dont-label">Don't use unapproved colors</div>
+          </div>
+
+          <div class="dont-card">
+            <div class="dont-display">
+              <span class="wordmark rotated">Amply</span>
+            </div>
+            <div class="dont-label">Don't rotate the wordmark</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation -->
+    <section>
+      <div class="container">
+        <h2>Implementation</h2>
+
+        <h3>CSS</h3>
+        <div class="code-block">
+<span class="comment">/* Brand colors */</span>
+<span class="property">--amply-primary:</span> <span class="value">#05668D</span>;
+<span class="property">--amply-dark:</span> <span class="value">#044a66</span>;
+<span class="property">--amply-light:</span> <span class="value">#e8f4f8</span>;
+
+<span class="comment">/* Wordmark */</span>
+<span class="property">.amply-wordmark</span> {
+  <span class="property">font-family:</span> <span class="value">'Lexend', sans-serif</span>;
+  <span class="property">font-weight:</span> <span class="value">900</span>;
+  <span class="property">letter-spacing:</span> <span class="value">-0.02em</span>;
+  <span class="property">color:</span> <span class="value">var(--amply-primary)</span>;
+}
+        </div>
+
+        <h3>HTML</h3>
+        <div class="code-block">
+<span class="comment">&lt;!-- Load Lexend from Google Fonts --&gt;</span>
+&lt;link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet"&gt;
+
+<span class="comment">&lt;!-- Wordmark markup --&gt;</span>
+&lt;span class="amply-wordmark"&gt;Amply&lt;/span&gt;
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        Amply Brand Guidelines<br>
+        <a href="/docs/brand/overview">Back to Brand Documentation</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

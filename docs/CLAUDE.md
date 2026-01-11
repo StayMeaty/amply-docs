@@ -44,6 +44,7 @@ First paragraph of content...
 - **Fee details**: Donors choose to cover fees (default/recommended) or have fees deducted. Bank transfers (SEPA/ACH) often fee-free. No payout fees—what's shown is what orgs receive. Canonical source: `transparency/pricing.md`
 - **Privacy principle**: "Hide faces, not money." All transactions on ledger (including sensitive ones), but visibility levels control public detail. Sensitive data (HR, legal, security) can be aggregated or internal-only while still in hash chain. Canonical source: `transparency/privacy.md`
 - **Typography**: Lexend (Google Font). Headlines: Thin/ExtraLight; Body: Regular; Wordmark "Amply": Black 900. Canonical source: `brand/typography.md`
+- **Brand color**: Amply Teal `#05668D`. Dark variant: `#044a66`. Light variant: `#e8f4f8`. Canonical source: `brand/overview.md`
 
 ## Tone & Voice
 - **Slightly inspiring but professional**: Not preachy, not saintly
@@ -401,3 +402,16 @@ docs/
 - Documentation created:
   - `brand/overview.md`: Brand principles, element overview
   - `brand/typography.md`: Full typography guide with implementation examples
+
+**Update**: Logo guidelines and brand colors established
+- Primary color: Amply Teal `#05668D` (trust, clarity, calm - WCAG AA compliant)
+- Color variants: Dark `#044a66`, Light `#e8f4f8`
+- Logo = wordmark "Amply" in Lexend Black 900
+- Created `static/brand/logo-guidelines.html`: Comprehensive visual guide
+  - Wordmark versions (primary, reversed, dark mode, monochrome)
+  - Clear space requirements (1× height of "A")
+  - Minimum size (20px digital, 15pt print)
+  - Color specifications (Hex, RGB, HSL, CMYK)
+  - Background usage examples
+  - Incorrect usage examples (don'ts)
+  - Implementation code (CSS, HTML)

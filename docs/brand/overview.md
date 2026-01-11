@@ -26,9 +26,19 @@ Amply's visual identity reflects its mission: **clarity through transparency**. 
 
 **Amply** in Lexend Black (900) serves as our text logo. Simple, bold, recognizable.
 
+→ [Logo Usage Guidelines](/brand/logo-guidelines.html) (visual reference)
+
 ### Colors
 
-*Documentation coming*
+**Amply Teal** is our primary brand color.
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Amply Teal | `#05668D` | Primary brand color, wordmark |
+| Amply Dark | `#044a66` | Hover states, dark accents |
+| Amply Light | `#e8f4f8` | Backgrounds, subtle accents |
+
+Amply Teal conveys trust, clarity, and calm—values central to transparent giving. It achieves **WCAG AA** contrast (6.4:1) on white backgrounds.
 
 ### Voice & Tone
 
@@ -45,3 +55,4 @@ Amply's visual identity reflects its mission: **clarity through transparency**. 
 
 **In this section:**
 - [Typography](./typography.md)
+- [Logo Guidelines](/brand/logo-guidelines.html)
