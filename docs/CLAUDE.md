@@ -38,6 +38,7 @@ First paragraph of content...
 - **Core principle**: Ultra-transparency - all docs publicly available
 - **Classification**: UN SDGs (17 Sustainable Development Goals) used to categorize all causes
 - **Effectiveness focus**: GiveWell-style impact evaluation approach
+- **Platform vs. Recommendations (IMPORTANT)**: Amply is an OPEN PLATFORM but an EFFECTIVENESS ADVOCATE. Any verified nonprofit can use Amply's tools to collect donations—no gatekeeping based on impact metrics. However, when guiding donors, Amply researches, rates, and recommends organizations that maximize net-impact per dollar. Platform access is neutral; recommendations are effectiveness-guided. Donors always choose freely, but Amply helps them find where money goes furthest.
 - **Key term**: "Ultra-pragmatic" - Amply's approach is realistic, efficient, accessible, not idealistic
 - **Fee model (CRITICAL)**: Amply takes ZERO platform fees. Amply sustains itself through donations, like any other nonprofit. Only unavoidable third-party fees (e.g., Stripe payment processing) are passed through. This is a central differentiator.
 - **Fee details**: Donors choose to cover fees (default/recommended) or have fees deducted. Bank transfers (SEPA/ACH) often fee-free. No payout fees—what's shown is what orgs receive. Canonical source: `transparency/pricing.md`
@@ -323,3 +324,27 @@ docs/
   - `stripe/` - Payment integration
   - `widgets/` - Embeddable widgets
 - Note: tech-stack/ is internal developer documentation, not in public sidebar
+
+**Update**: Comprehensive documentation gap analysis completed
+- Read all 72+ documentation files to build complete understanding
+- Identified 20 gaps/blind spots across critical, moderate, and strategic categories
+- Key findings:
+  - No failure/edge case documentation
+  - No competitive context (why Amply vs alternatives)
+  - SDG individual goal pages missing (only overview exists)
+  - Legal entity/jurisdiction unclear
+  - German locale configured but no content
+  - Effectiveness vs. neutrality tension identified
+
+**Resolution**: Platform vs. Recommendations positioning clarified
+- Added "Platform vs. Recommendations (IMPORTANT)" to Key Facts
+- Amply is an OPEN PLATFORM (any verified org can use tools)
+- But an EFFECTIVENESS ADVOCATE (guides donors to high-impact orgs)
+- Platform access: neutral; Recommendations: effectiveness-guided
+- This resolves the philosophical tension in existing docs
+
+**Identified gaps for future work**:
+- Critical: Failure modes, legal clarity, sustainability explanation
+- High: SDG goal pages, competitive context, German content decision
+- Medium: Organization timelines, fundraiser limits, impact methodology
+- Low: Regulator/auditor docs, Moral Circles depth
